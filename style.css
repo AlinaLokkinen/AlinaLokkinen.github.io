@@ -1,20 +1,60 @@
 body {
-    background-color: rgb(239, 241, 255);
+    background-color: rgb(207, 212, 216);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
+.container {
+    display: flex;
+    
+}
+
+#sivulista {
+    flex: 1;
+    margin-top: 20px;
+    max-width: 150px;
+}
+
+#navigointi {
+    margin-bottom: 80px;
+    text-align: left;
+}
+
+#navigointi a {
+    text-decoration: none;
+    background-color: rgb(212, 228, 228);
+    padding: 8px;  
+    border-radius: 5px; 
+}
+
+.sisalto {
+    flex: 2;
     text-align: center;
+    margin-right: 120px;
 }
 
-.navigointi {
+.sisalto h1 {
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.paakuva {
+    max-height: 400px;
+    float: left;
+    margin-right: 15px;
+}
+
+figcaption {
     font-size: 15px;
 }
 
-.navigointi a {
-    border-radius: 5px;
-    text-decoration: none;
+table {
+    margin: 35px;
+    margin-left: 80px;
+    border: 1px solid;
 }
 
-.navigointi a:hover {
-    background-color: coral;
+td {
+    padding: 10px;
+    font-weight: lighter;
+    
 }
