@@ -47,14 +47,20 @@ figcaption {
     font-size: 15px;
 }
 
+
+.taulukko {
+    margin-top: 75px;
+}
+
 table {
     margin: 35px;
     margin-left: 80px;
-    border: 1px solid;
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
 td {
     padding: 10px;
     font-weight: lighter;
-    
+    border: 1px solid;
 }
