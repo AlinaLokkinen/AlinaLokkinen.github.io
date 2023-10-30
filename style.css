@@ -30,6 +30,7 @@ body {
     flex: 2;
     text-align: center;
     margin-right: 120px;
+    max-width: 1300px;
 }
 
 .sisalto h1 {
@@ -57,10 +58,204 @@ table {
     margin-left: 80px;
     border: 1px solid black;
     border-collapse: collapse;
+    border-color: blue;
+    border-bottom-color: red;
 }
 
 td {
     padding: 10px;
     font-weight: lighter;
     border: 1px solid;
+    border-inline-color: blue;
+    border-bottom-color: red;
+    border-top-color: red;
+}
+
+.galleria {
+    display: grid;
+    grid-template-columns: 450px 450px 450px;
+    grid-template-rows: 500px;
+    margin-top: 75px;
+}
+
+.galleria img {
+    max-height: 80%;    
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+        background-color: rgb(207, 212, 216);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    
+    
+    #sivulista {
+        font-size: 8px;
+        flex: 1;
+        margin-top: 20px;
+        max-width: 90px;
+    }
+    
+    #navigointi {
+        margin-bottom: 80px;
+        /* text-align: left; */
+    }
+    
+    #navigointi a {
+        font-size: 11px;
+        text-decoration: none;
+        background-color: rgb(212, 228, 228);
+        padding: 3px;  
+        border-radius: 2px; 
+    }
+    
+    .sisalto {
+        /* flex: 2; */
+        text-align: center;
+        margin-right: 120px;
+        max-width: 250px;
+    }
+    
+    .sisalto h1 {
+        
+        font-size: 11px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .sisalto p {
+        font-size: 7px;
+    }
+    
+    .paakuva {
+        max-height: 100px;
+    }
+    
+    figcaption {
+        font-size: 8px;
+    }
+    
+    
+    .taulukko {
+        margin: 0px;
+    }
+    
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        border-color: blue;
+        border-bottom-color: red;
+        font-size: 8px;
+        margin: 10px;
+    }
+    
+    td {
+        /* padding: 10px; */
+        font-weight: lighter;
+        border: 1px solid;
+        border-inline-color: blue;
+        border-bottom-color: red;
+        border-top-color: red;
+        /* max-width: 100%; */
+    }
+    
+    .galleria {
+        display: grid;
+        grid-template-columns: 75px 75px 75px;
+        grid-template-rows: 100px;
+        margin: 0px;
+        justify-content: center;
+        /* margin: 150px; */
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: rgb(207, 212, 216);
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    
+    #sivulista {
+        font-size: 6px;
+        flex: 1;
+        margin-top: 15px;
+        max-width: 60px;
+    }
+
+    #sivulista a {
+        text-decoration: none;
+    }
+    
+    #navigointi {
+        margin-bottom: 60px;
+        /* text-align: left; */
+    }
+    
+    #navigointi a {
+        font-size: 8px;
+        text-decoration: none;
+        background-color: rgb(212, 228, 228);
+        padding: 3px;  
+        border-radius: 2px; 
+    }
+    
+    .sisalto {
+        text-align: center;
+        max-width: 150px;
+    }
+    
+    .sisalto h1 {
+        
+        font-size: 9px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .sisalto p {
+        font-size: 7px;
+    }
+    
+    .paakuva {
+        max-height: 90px;
+    }
+
+    figure {
+        margin: 10px;
+    }
+    
+    figcaption {
+        font-size: 7px;
+    }
+    
+
+    
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        border-color: blue;
+        border-bottom-color: red;
+        font-size: 6px;
+    }
+    
+    td {
+        max-width: 25px;
+        font-weight: lighter;
+        border: 1px solid;
+        border-inline-color: blue;
+        border-bottom-color: red;
+        border-top-color: red;
+
+    }
+    
+    .galleria {
+        display: grid;
+        grid-template-columns: 60px 60px 60px;
+        grid-template-rows: 75px;
+        margin: 0px;
+        justify-content: center;
+        /* margin: 150px; */
+    }
+
+
 }
